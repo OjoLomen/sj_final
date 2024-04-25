@@ -1,5 +1,6 @@
 <?php
   include('partials/header.php');
+  include('partials/slider.php');
 ?>
     <!-- end header section -->
   </div>

@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
-  <title>Guarder</title>
+  <title>Gorila Zámočníctvo</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -30,11 +30,17 @@
 <body>
   <div class="hero_area">
     <!-- header section strats -->
-    <div class="hero_bg_box">
-      <div class="img-box">
-        <img src="images/hero-bg.jpg" alt="">
-      </div>
-    </div>
+    <?php
+        // Check if the current page is the specific page where you want to remove the image
+        // You can replace "specific-page.php" with the actual filename of the specific page
+        if(basename($_SERVER['PHP_SELF']) !== 'specific-page.php') {
+        ?>
+        <div class="hero_bg_box">
+            <div class="img-box">
+                <img src="images/hero-bg.jpg" alt="">
+            </div>
+        </div>
+        <?php } ?>
 
     <header class="header_section">
       <div class="header_top">
@@ -43,7 +49,7 @@
             <a href="" class="contact_link1">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span>
-                Lorem ipsum dolor sit amet,
+                Báčsky Petrovec, 21470, Srbsko
               </span>
             </a>
             <a href="" class="contact_link2">
@@ -55,7 +61,7 @@
             <a href="" class="contact_link3">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
-                demo@gmail.com
+                bravarija.gorila@gmail.com
               </span>
             </a>
           </div>
@@ -64,9 +70,9 @@
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
               <span>
-                Guarder
+                Gorila Zámočníctvo
               </span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,19 +82,19 @@
             <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.php">Domov <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
+                  <a class="nav-link" href="about.php"> O nás</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="service.html"> Services </a>
+                  <a class="nav-link" href="service.php"> Služby </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="guard.html"> Guards </a>
+                  <a class="nav-link" href="guard.php"> Galéria </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact us</a>
+                  <a class="nav-link" href="contact.php"> Kontakt </a>
                 </li>
               </ul>
             </div>
