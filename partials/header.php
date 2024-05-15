@@ -1,3 +1,6 @@
+<?php
+  require('_inc/functions.php');
+?>
 <!DOCTYPE html>
 <html>
 

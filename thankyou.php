@@ -1,3 +1,7 @@
+<?php
+  include('partials/header.php');
+  include('partials/slider.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
