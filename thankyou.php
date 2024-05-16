@@ -1,6 +1,6 @@
 <?php
-  include('partials/header.php');
-  include('partials/slider.php');
+  include_once('partials/header.php');
+  include_once('partials/slider.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,8 +46,10 @@
 
 <?php
   ob_start();
-  include('partials/header.php');
+  include_once('partials/header.php');
   ob_end_flush();
+  $contact_object = new Contact();
+  $contact_object->insert();
 ?>
 
 <section class="thankyou-section">
@@ -62,7 +64,7 @@
 </section>
 
 <?php
-include('partials/footer.php');
+include_once('partials/footer.php');
 ?>
 
 </body>

@@ -16,7 +16,7 @@ include('partials/header.php');
     <div class="">
       <div class="row">
         <div class="col-md-7 mx-auto">
-          <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+          <form action="thankyou.php" method="post">
             <div class="contact_form-container">
               <div>
                 <div>
@@ -32,9 +32,7 @@ include('partials/header.php');
                   <input type="text" name="message" placeholder="Message" class="message_input" />
                 </div>
                 <div class="btn-box ">
-                  <button type="submit">
-                    Send
-                  </button>
+                  <input type="submit" name="contact_submitted" value="Send">
                 </div>
               </div>
             </div>

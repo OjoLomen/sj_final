@@ -16,14 +16,14 @@
                    // echo 'Formulár bol odoslaný';
                    $data = array('contact_name'=>$_POST['name'],
                       'contact_email'=>$_POST['email'],
+                      'contact_phone'=>$_POST['phone'],
                       'contact_message'=>$_POST['message'],
-                      'contact_acceptance'=>$_POST['acceptance'],
                     );
 
                     try{
 
-                      $query = "INSERT INTO contact (name, email, phone, message, acceptance) 
-                      VALUES (:contact_name, :contact_email, :contact_phone, :contact_message, :contact_acceptance)";
+                      $query = "INSERT INTO contact (name, email, phone, message) 
+                      VALUES (:contact_name, :contact_email, :contact_phone, :contact_message)";
                       $query_run = $this->db->prepare($query);
                       $query_run->execute($data);    
 
