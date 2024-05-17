@@ -7,16 +7,26 @@ if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true){
     exit; // Ensure script execution stops after redirection
 }
 ?> 
-<main>
-    <section class="container">
-        <h1>Prihlásenie</h1>
-        <form action="" method="POST">
-            <input type="email" name="email" placeholder="Váš email">
-            <br>
-            <input type="password" name="password" placeholder="Vaše heslo">
-            <br>
-            <input type="submit" value="Odoslať" name="user_login">
-        </form>
+
+<body>
+    <main>
+        <section class="container form-container">
+            <div style="justify-content: center; display: grid">
+                <h1 style="margin-bottom: 20px">Prihlásenie</h1>
+                <form action="" method="POST">
+                    <table>
+                        <tr>
+                            <td><input type="email" name="email" placeholder="Váš email" style="margin-bottom: 20px; border-radius: 10px"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" name="password" placeholder="Vaše heslo" style="margin-bottom: 20px; border-radius: 10px"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Odoslať" name="user_login" style="margin-bottom: 20px; border-radius: 10px; background-color: orange"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
         <?php
 
         if(isset($_POST['user_login'])){
@@ -36,8 +46,9 @@ if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true){
         }
 
         ?>
-    </section>
-</main>
+        </section>
+    </main>
+</body>
     
 <?php
 include_once('partials/footer.php');
