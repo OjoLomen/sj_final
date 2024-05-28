@@ -1,3 +1,6 @@
+<?php 
+ob_start();
+?>
 <section class="container" style="color:white">
         <h1>Admin rozhranie</h1>
         <div class="row">

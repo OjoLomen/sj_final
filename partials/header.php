@@ -113,9 +113,6 @@
                 } if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true){
                  echo '
                 <li class="nav-item">
-                  <a class="nav-link" href="admin.php"> Admin </a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="logout.php"> Logout </a>
                 </li>';
                 }
